@@ -16,11 +16,11 @@ class JresSolver < Formula
   end
 
   def install
-    # Install the binaries to the Homebrew bin path
-    bin.install "jres_solver"
-    bin.install "jres_formatter"
-    
-    lib.install Dir["libjres_solver.*"]
+    libexec.install Dir["*"]
+
+    # 2. Create symlinks in /usr/local/bin that point to the libexec binaries
+    bin.install_symlink libexec/"jres_solver"
+    bin.install_symlink libexec/"jres_formatter"
   end
 
   test do
