@@ -17,8 +17,8 @@ class JresSolver < Formula
 
   def install
     # Install the binaries to the Homebrew bin path
-    bin.install "solver"
-    bin.install "formatter"
+    bin.install "jres_solver"
+    bin.install "jres_formatter"
     
     lib.install Dir["libjres_solver.*"]
   end
