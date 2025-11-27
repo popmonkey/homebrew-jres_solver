@@ -16,11 +16,8 @@ class JresSolver < Formula
   end
 
   def install
-    libexec.install Dir["*"]
-
-    # 2. Create symlinks in /usr/local/bin that point to the libexec binaries
-    bin.install_symlink libexec/"jres_solver"
-    bin.install_symlink libexec/"jres_formatter"
+    bin.install "bin/jres_solver", "bin/jres_formatter"
+    lib.install "lib/libjres_solver.a" 
   end
 
   test do
