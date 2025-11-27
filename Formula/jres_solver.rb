@@ -1,7 +1,7 @@
 class JresSolver < Formula
   desc "JSON.Racing Endurance Schedule Solver"
   homepage "https://github.com/popmonkey/jres_solver_cpp"
-  version "0.10.1"
+  version "0.10.2"
 
   if OS.mac?
     if Hardware::CPU.arm?
