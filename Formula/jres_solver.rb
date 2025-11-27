@@ -6,12 +6,12 @@ class JresSolver < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       # Apple Silicon (M1/M2/M3)
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v0.10.1/jres-solver-v0_10_1-darwin-arm64.tar.gz"
-      sha256 "19b733c2e4dfdf093648cbe08813fbdcd09d368588e076baf4928b1a0967a891"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v0.10.2/jres-solver-v0_10_2-darwin-arm64.tar.gz"
+      sha256 "4da688827eac99450ed471d0c68c8c6a7da333c8bf63b7a190db3c3bb972149f"
     else
       # Intel Mac
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v0.10.1/jres-solver-v0_10_1-darwin-x64.tar.gz"
-      sha256 "04773b14f298744af7a5820d5952f939cf215d1ec901312be874be502ade0aea"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v0.10.2/jres-solver-v0_10_2-darwin-x64.tar.gz"
+      sha256 "cf25358b5bcc7da58e5ad34d9baa6287b5b7701be3a8965f66774f769881f1ea"
     end
   end
 
