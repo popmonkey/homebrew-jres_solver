@@ -1,17 +1,17 @@
 class JresSolver < Formula
   desc "JSON.Racing Endurance Schedule Solver"
   homepage "https://github.com/popmonkey/jres_solver_cpp"
-  version "2.2.0"
+  version "3.0.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
       # Apple Silicon (M1/M2/M3)
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v2.2.0/jres-solver-v2_2_0-darwin-arm64.tar.gz"
-      sha256 "b98879110563a65c2a500db12a6c8ceffdaf9cd70c9023c44c6f7dd00719ccba"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.0/jres-solver-v3_0_0-darwin-arm64.tar.gz"
+      sha256 "68fb491d9a6a4c84df04190d61d2acfa87ab9f9d7b24721a4e3a9078c96166a2"
     else
       # Intel Mac
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v2.2.0/jres-solver-v2_2_0-darwin-x64.tar.gz"
-      sha256 "2dd9a1e1a6917991d76754011d01640bb1356e6ff0e5d01209779cf10fd0b32a"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.0/jres-solver-v3_0_0-darwin-x64.tar.gz"
+      sha256 "5b451f8b6bc7977e5f12e50c732b0ccd83f6374921bb6703aa93cab46c9c51d8"
     end
   end
 
