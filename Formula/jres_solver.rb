@@ -14,19 +14,8 @@ class JresSolver < Formula
   end
 
   def install
-    # If the tarball contains 'jres-solver-v3_0_0-darwin-arm64/bin/...'
-    # Homebrew usually cd's into that single directory automatically.
-    # To be safe and explicit, we define the prefix path.
-    
-    # Extract the platform-specific directory name logic
-    arch_dir = OS.mac? && Hardware::CPU.arm? ? "darwin-arm64" : "darwin-x64"
-    folder_name = "jres_solver-v#{version.to_s.gsub('.', '_')}-#{arch_dir}"
-
-    # Change directory into the versioned folder if Homebrew didn't do it automatically
-    cd folder_name do
-      bin.install "bin/jres_solver", "bin/jres_formatter"
-      lib.install "lib/libjres_solver.a"
-    end
+    bin.install "bin/jres_solver", "bin/jres_formatter"
+    lib.install "lib/libjres_solver.a"
   end
 
   test do
