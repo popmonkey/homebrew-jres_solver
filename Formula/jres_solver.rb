@@ -5,10 +5,10 @@ class JresSolver < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.0/jres-solver-v3_0_0-darwin-arm64.tar.gz"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.0/jres_solver-v3_0_0-darwin-arm64.tar.gz"
       sha256 "41012e624df6c78d6e6f7762d79acaa6bd6ebe7faa2dea71caf68ce0a3c4b083"
     else
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.0/jres-solver-v3_0_0-darwin-x64.tar.gz"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.0/jres_solver-v3_0_0-darwin-x64.tar.gz"
       sha256 "576c17c865b4eae6160128bfa13dbd850074c8eb0786c018976ca7eed8d1b8ff"
     end
   end
