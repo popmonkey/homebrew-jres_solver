@@ -20,7 +20,7 @@ class JresSolver < Formula
     
     # Extract the platform-specific directory name logic
     arch_dir = OS.mac? && Hardware::CPU.arm? ? "darwin-arm64" : "darwin-x64"
-    folder_name = "jres-solver-v#{version.to_s.gsub('.', '_')}-#{arch_dir}"
+    folder_name = "jres_solver-v#{version.to_s.gsub('.', '_')}-#{arch_dir}"
 
     # Change directory into the versioned folder if Homebrew didn't do it automatically
     cd folder_name do
