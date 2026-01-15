@@ -1,15 +1,15 @@
 class JresSolver < Formula
   desc "JSON.Racing Endurance Schedule Solver"
   homepage "https://github.com/popmonkey/jres_solver_cpp"
-  version "3.0.4"
+  version "3.1.0"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.4/jres_solver-v3_0_4-darwin-arm64.tar.gz"
-      sha256 "53fc0ccf20059818bd42706ed4d1acc6d06f8015d5ab543dbe044f76313ed27d"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.1.0/jres_solver-v3_1_0-darwin-arm64.tar.gz"
+      sha256 "4f0fed66cdabe93dd601dc6ec45c9889bfde2d3355cad9aeb816daa3417dff2a"
     else
-      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.0.4/jres_solver-v3_0_4-darwin-x64.tar.gz"
-      sha256 "6a4732da5fac2c9e8be7ac84ed5894c92a357ebbada2fbfefa64394f53684d64"
+      url "https://github.com/popmonkey/jres_solver_cpp/releases/download/v3.1.0/jres_solver-v3_1_0-darwin-x64.tar.gz"
+      sha256 "3323bb6f1bc05bceb127ed046ece864d698481921a7a9ba360aa6da4604626ac"
     end
   end
 
